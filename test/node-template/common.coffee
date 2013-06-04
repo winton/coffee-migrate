@@ -1,6 +1,6 @@
-Common = require("../../lib/node-template/common")
+Common = require("../../lib/coffee-migrate/common")
 
-describe 'NodeTemplate::Common', ->
+describe 'CoffeeMigrate::Common', ->
   describe '#defer', ->
     it 'should resolve', (done) ->
       fn = ->

@@ -1,10 +1,10 @@
-NodeTemplate  = require("../lib/node-template")
+CoffeeMigrate  = require("../lib/coffee-migrate")
 node_template = null
 
-describe 'NodeTemplate', ->
+describe 'CoffeeMigrate', ->
   describe '#constructor', ->
     before ->
-      node_template = new NodeTemplate
+      node_template = new CoffeeMigrate
 
-    it 'should return an instance of NodeTemplate', ->
-      node_template.should.be.an.instanceof(NodeTemplate)
+    it 'should return an instance of CoffeeMigrate', ->
+      node_template.should.be.an.instanceof(CoffeeMigrate)

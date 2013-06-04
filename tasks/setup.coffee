@@ -16,8 +16,8 @@ module.exports = (grunt) ->
       path.resolve(__dirname, "../bin/#{grunt.config("pkg").name}")
       "#!/usr/bin/env node\n" + Coffee.compile(
         """
-        NodeTemplate = require("../lib/node-template")
-        new NodeTemplate
+        CoffeeMigrate = require("../lib/coffee-migrate")
+        new CoffeeMigrate
         """
       )
     )
