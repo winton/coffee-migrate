@@ -1,4 +1,4 @@
-Common = require("../../lib/coffee-migrate/common")
+Common = require("../../lib/migrate/common")
 
 describe 'CoffeeMigrate::Common', ->
   describe '#defer', ->
