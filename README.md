@@ -1,43 +1,32 @@
-##NodeTemplate
+##Migrate
 
-Node.js package template.
+Abstract migration framework for node (in coffeescript).
 
-###Goals
+###Origin
 
-* Use widely accepted practices and libraries
-* Automate the creation and renaming of projects
-* Projects share git history for easy updates
-* Add functionality through template [branches](https://github.com/winton/node-template/branches)
+This project is based on [node-migrate](https://github.com/visionmedia/node-migrate).
 
-###Install
+The main difference: it generates migrations written in Coffeescript.
 
-	npm install node-template -g
+## Usage
 
-###Create a new project
+```
+Usage: migrate [options] [command]
 
-	node-template <project-name> <branch>
+Options:
 
-Available branches:
+   -c, --chdir <path>   change the working directory
 
-* **master** - Base npm package template *(default)*
-* [**bookshelf**](https://github.com/winton/node-template/tree/bookshelf) - Bookshelf.js database ORM
-* [**express**](https://github.com/winton/node-template/tree/express) - Express.js web server
-* [**bookshelf-express**](https://github.com/winton/node-template/tree/bookshelf-express) - Bookshelf + Express
+Commands:
 
-###Start working
+   down             migrate down
+   up               migrate up (the default command)
+   create [title]   create a new migration file with optional [title]
 
-Run `grunt` to watch for changes in `src` and compile them to `lib`.
-
-Run `npm test` to execute your test suite.
-
-### Contribute
-
-[Create an issue](https://github.com/winton/node-template/issues/new) to discuss template changes.
-
-Pull requests for template changes and new branches are even better.
+```
 
 ### Stay up to date
 
-[Watch this project](https://github.com/winton/node-template#) on Github.
+[Watch this project](https://github.com/winton/coffee-migrate) on Github.
 
 [Follow Winton Welsh](http://twitter.com/intent/user?screen_name=wintonius) on Twitter.
