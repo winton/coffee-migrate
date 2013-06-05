@@ -7,12 +7,12 @@
         "url": "https://github.com/winton/coffee-migrate.git"
     },
     "dependencies": {
+        "coffee-script": "",
         "q": "",
         "underscore": ""
     },
     "devDependencies": {
         "chai": "",
-        "coffee-script": "",
         "glob": "",
         "grunt": "",
         "grunt-contrib-coffee": "",
@@ -26,7 +26,7 @@
         "sinon": ""
     },
     "bin": {
-        "coffee-migrate": "./bin/coffee-migrate"
+        "coffee-migrate": "./bin/migrate"
     },
     "license": "MIT",
     "scripts": {

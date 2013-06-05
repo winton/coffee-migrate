@@ -1,9 +1,0 @@
-#!/usr/bin/env node
-(function() {
-  var CoffeeMigrate;
-
-  CoffeeMigrate = require("../lib/coffee-migrate");
-
-  new CoffeeMigrate;
-
-}).call(this);
