@@ -1,35 +1,35 @@
 {
-    "name": "coffee-migrate",
-    "version": "0.1.0",
-    "author": "winton",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/winton/coffee-migrate.git"
-    },
-    "dependencies": {
-        "coffee-script": "",
-        "q": "",
-        "underscore": ""
-    },
-    "devDependencies": {
-        "chai": "",
-        "glob": "",
-        "grunt": "",
-        "grunt-contrib-coffee": "",
-        "grunt-contrib-watch": "",
-        "grunt-release": "",
-        "grunt-rename": "",
-        "grunt-text-replace": "",
-        "mocha": "",
-        "prompt": "",
-        "source-map-support": "",
-        "sinon": ""
-    },
-    "bin": {
-        "coffee-migrate": "./bin/migrate"
-    },
-    "license": "MIT",
-    "scripts": {
-        "test": "mocha test/test.js --reporter spec"
-    }
+  "name": "coffee-migrate",
+  "version": "0.1.1",
+  "author": "winton",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/winton/coffee-migrate.git"
+  },
+  "dependencies": {
+    "coffee-script": "",
+    "q": "",
+    "underscore": ""
+  },
+  "devDependencies": {
+    "chai": "",
+    "glob": "",
+    "grunt": "",
+    "grunt-contrib-coffee": "",
+    "grunt-contrib-watch": "",
+    "grunt-release": "",
+    "grunt-rename": "",
+    "grunt-text-replace": "",
+    "mocha": "",
+    "prompt": "",
+    "source-map-support": "",
+    "sinon": ""
+  },
+  "bin": {
+    "coffee-migrate": "./bin/migrate"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha test/test.js --reporter spec"
+  }
 }
