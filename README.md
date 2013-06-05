@@ -8,7 +8,7 @@ This project is based on [node-migrate](https://github.com/visionmedia/node-migr
 
 The main difference: it generates migrations written in Coffeescript.
 
-## Usage
+###Usage
 
 ```
 Usage: migrate [options] [command]
