@@ -77,9 +77,10 @@ performMigration = (direction, migrationName) ->
   migrationPath = (if migrationName then join("migrations", migrationName) else migrationName)
   set[direction] null, migrationPath
 
-args     = process.argv.slice(2)
-options  = args: []
-cwd      = undefined
+args    = process.argv.slice(2)
+arg     = undefined
+options = args: []
+cwd     = process.cwd()
 
 usage = [
   ""
@@ -106,8 +107,6 @@ template = [
   "  next()"
   ""
 ].join("\n")
-
-arg = undefined
 
 while args.length
   arg = args.shift()
@@ -142,7 +141,7 @@ commands =
     )
 
     curr  = pad((migrations.pop() or 0) + 1)
-    title = slugify([].slice.call(arguments_).join(" "))
+    title = slugify([].slice.call(arguments).join(" "))
     title = (if title then curr + "-" + title else curr)
 
     create title
