@@ -6,7 +6,10 @@ module.exports = Set = (migrate_path) ->
   @path       = migrate_path
   @pos        = 0
 
-  if fs.existsSync(setup = "#{path.dirname(@path)}/setup.coffee")
+  setup = "#{path.dirname(@path)}/setup.coffee"
+  setup = path.resolve(setup)
+
+  if fs.existsSync(setup)
     setup = require setup
     setup @
 
