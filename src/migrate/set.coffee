@@ -1,10 +1,14 @@
 for key, value of require('./common')
   eval("var #{key} = value;")
 
-module.exports = Set = (path) ->
+module.exports = Set = (migrate_path) ->
   @migrations = []
-  @path       = path
+  @path       = migrate_path
   @pos        = 0
+
+  if fs.existsSync(setup = "#{path.dirname(@path)}/setup.coffee")
+    setup = require setup
+    setup @
 
 Set::__proto__ = EventEmitter::
 

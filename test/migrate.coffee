@@ -38,7 +38,7 @@ describe 'Migrate', ->
 
         next()
 
-    it "should", (done) ->
+    it "should migrate", (done) ->
       set = migrate()
       set.up ->
         assertPets()
